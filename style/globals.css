@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-x: hidden;
+  transition: background-color var(--transition-duration), color var(--transition-duration);
+}
+
+.app-container {
+  width: 100%;
+  max-width: 600px;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+input,
+label,
+button {
+  transition-duration: var(--transition-duration);
+  font-family: inherit;
+}
+
+:focus-visible {
+  outline: 2px dashed var(--text-primary);
+  outline-offset: 4px;
+  transition-duration: 0s !important;
+}
